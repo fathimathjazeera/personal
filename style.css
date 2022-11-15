@@ -201,6 +201,16 @@ body.dark-theme{
     overflow: hidden;
     border: 0.2rem solid #00a78e;
 }
+.send-btn{
+   background-image: linear-gradient(to right, #00a78e, #0ffdd9);
+    padding: 0.9rem 3.5rem;
+    font-size: 2rem;
+    color: black;
+    border-radius: 0.5rem;
+    margin-top: 1rem;
+    z-index: 0;
+   
+}
 .btn::before{
     content: "";
     position: absolute;
