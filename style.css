@@ -42,8 +42,9 @@ section{
    color: var(--primary-text-color);
    text-align: center;
    padding: 1rem;
-  
+
 }
+
 
 #menu{
     font-size: 2rem;
@@ -60,6 +61,7 @@ section{
     z-index: 1000;
     cursor: pointer;
 }
+
 .navbar{
     position: fixed;
     top: 2.0rem;
@@ -124,7 +126,7 @@ body.dark-theme{
 .home .content{
     flex: 1 1 40rem;
     padding: 1rem;
-    margin-left: 50rem;
+    margin-left: 60rem;
 }
 .anim{
     opacity: 0;
@@ -690,4 +692,14 @@ width: 100%;
     color: #00a78e;
     font-size: 5rem;
     padding: 1rem 0;
+}
+@media (max-width:600px){
+.home .content{
+    margin-left: 2rem;
+}
+}
+@media (max-width:700px){
+.home .content{
+    margin-left: 10rem;
+}
 }
