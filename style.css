@@ -113,27 +113,18 @@ body.dark-theme{
     align-items: center;flex-wrap: wrap;
     justify-content: center;
     flex-wrap: wrap;
-}
-.home .image{
-    flex: 1 1 40rem;
-    padding: 1rem;
-    text-align: center;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6),rgba(0, 0, 0, 0.6)),url('images/me.jpg');
+    margin-top: 0rem;
+    background-position: center;
+    background-size: cover;
     
 }
-.home .image img{
-    height: 40rem;
-   width: 45rem;
-    box-shadow: 0 0.5rem 1rem rgba(0,0,0,0.3);
-    border-top: 1rem solid var(--main-color);
-    border-right: 1rem solid var(--main-color);
-    border-bottom: 1rem solid var(--main-color);
-    border-left: 1rem solid var(--main-color);
-    border-radius: 0.5rem;
-}
+
+
 .home .content{
     flex: 1 1 40rem;
     padding: 1rem;
-    margin-left: 6rem;
+    margin-left: 50rem;
 }
 .anim{
     opacity: 0;
@@ -180,7 +171,7 @@ body.dark-theme{
     border-bottom: 10px solid transparent;
 }
 .home .content h3{
-    color: var(--primary-text-color);
+   color: #fff;
     font-size: 5rem;
     margin-top: 20px;
     animation-delay: 0.7s;
@@ -190,7 +181,7 @@ body.dark-theme{
 }
 .home .content p{
     padding:1rem 0 ;
-    color: var(--secondary-text-color);
+    color: #fff;
     font-size: 1.5rem;
     line-height: 1.5;
     font-family: sans-serif;
@@ -258,7 +249,7 @@ body.dark-theme{
     
 }
 .service{
-    background-image: linear-gradient(rgba(80, 78, 78, 0.6), rgba(61, 58, 58, 0.6)), url(images/laptop.jpg);
+    background-image: linear-gradient(rgba(80, 78, 78, 0.6), rgba(61, 58, 58, 0.6)), url(images/me.jpg);
     background-position: center;
     color: black;
     background-size: cover;
@@ -446,7 +437,7 @@ cursor: pointer;
 }
 .portfolio .image-container .box img{
     height: 100%;
-    width: 100%;
+    width: auto;
     object-fit: cover;
 }
 .portfolio .image-container .box .info{
@@ -622,6 +613,12 @@ flex-wrap: wrap;
     color: var(--primary-text-color);
     margin-top: 1rem;
 }
+@media (max-width:500px){
+    .home .content{
+        margin-left: 1rem;
+        margin-top: 7rem;
+    }
+}
 @media(max-width:1093px){
     .contact{
         margin-top: 1rem;
@@ -638,14 +635,18 @@ flex-wrap: wrap;
     }
 }
 @media(max-width:768px){
-    .home .image img{
-        height: auto;
-        width: 100%;
-    }
+   
 }
 @media (max-width:400px){
     html{
         font-size: 50%;
+    }
+    .home{
+        background-position: center;
+        background-size: cover;
+    }
+    .home .content{
+        margin-left: 4rem;
     }
     #about-me{
      margin-top: 1rem;
